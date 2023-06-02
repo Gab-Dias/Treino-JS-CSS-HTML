@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    
+
+</head>
+
+
+<body>
+    <main>
+        <section>
+            <div id="datas">
+
+                <div class="dados1">
+                    <label for="i-dia">Dia</label>
+                    <label for="i-mes">Mês</label>
+                    <label for="i-ano">Ano</label>
+                </div>
+                
+
+                <div class="dados2">
+                    <input type="text" name="dia" id="i-dia" maxlength="2px" placeholder="XX">
+                    <input type="text" name="mes" id="i-mes" maxlength="2px" placeholder="XX">
+                    <input type="text" name="ano" id="i-ano" minlength="4px" maxlength="4px" placeholder="XXXX">
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div id="icone">
+
+                <span class="material-symbols-outlined" onclick="calcular()">
+                    arrow_downward
+                </span>
+
+            </div>
+
+            <div id="baixo">
+                <div id="r-ano" class="r-resultado">
+                    -- 
+                </div> <p>Anos</p> <br>
+                <div id="r-mes" class="r-resultado">
+                    -- 
+                </div> <p>Mês</p> <br>
+                <div id="r-dia" class="r-resultado">
+                    -- 
+                </div> <p>Dias</p>
+            </div>
+         
+        </section>
+    </main>
+    
+    <script src="calculos.js"></script>
+
+</body>
+</html>
