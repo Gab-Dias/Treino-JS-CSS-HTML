@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/principal.css" media="all">
 
 
 </head>
@@ -14,7 +14,7 @@
     
     
     <section>
-        <img src="imagens/lupa.png" alt="">  
+        <img src="imagens/lupa.png" alt="lupa" id="icone">  
         
 
         <div id="box">
@@ -26,10 +26,12 @@
                 <input type="text" name="inome" id="inome">        
             </div>
 
-            <button> Analisar
+            <button onclick="analisarNome()"> Analisar
             </button>
         </div>
     </section>
+
+    <script src="nomes.js"></script>
     
 </body>
 </html>
