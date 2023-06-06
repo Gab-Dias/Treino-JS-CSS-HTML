@@ -19,25 +19,29 @@
     }
 
     15% { 
-        transform: translateY(180px);
+        transform: translateX(90px);
     }
 
     30% {
-        transform: translateX(400px);
+        transform: translateY(-250px);
     }
      45% {
-        transform: translateY(300px);
+        transform: translateX(-190px);
      }
 
      65% {
-        transform: translateY(-270px);
+        transform: translateY(160px);
      }
      80% {
-        transform: translateX(200px);
+        transform: translateY(-220px);
      }
 
-     100% { 
-        transform: translateY(0);
+     95% { 
+        transform: translateX(100px);
+     }
+
+     100%{
+        transform: translate(0);
      }
 }
 
@@ -60,7 +64,6 @@
 
 body {
     width: 100vw;
-    height: 100vh;
     background-image: url(imagens/5243451.jpg);
     background-size: cover;
     background-position: top;
@@ -181,8 +184,8 @@ img {
     width: 100px;
     height: 100px;
     
-    /* animation: lupaMexendo 20s linear infinite;
-    animation-direction: alternate; */
+    animation: lupaMexendo 10s linear infinite;
+    /animation-direction: alternate;  
     
     
 } 
