@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Geologica:wght@500&display=swap');
+
+@keyframes fundoPiscando {
+
+    0%{ background-color: rgba(229, 0, 0, 0.449);}
+    25% {background-color: rgba(255, 140, 0, 0.422);}
+    50% { background-color: rgba(255, 238, 0, 0.338);}
+    75% { background-color: rgba(2, 129, 34, 0.37);}
+    100% {background-color: rgba(0, 76, 255, 0.319);}
+
+} 
+
+@keyframes lupaMexendo {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    15% { 
+        transform: translateX(90px);
+    }
+
+    30% {
+        transform: translateY(-250px);
+    }
+     45% {
+        transform: translateX(-190px);
+     }
+
+     65% {
+        transform: translateY(160px);
+     }
+     80% {
+        transform: translateY(-220px);
+     }
+
+     95% { 
+        transform: translateX(-200px);
+     }
+
+     100%{
+        transform: translateX(0);
+     }
+}
+
+   @keyframes slidein {
+
+    from {background-position: left;
+        background-size: 3000px; 
+    }
+    to {background-position: -100px 0px;
+        background-size:2750px; 
+    }
+    
+    }
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+
+body {
+    width: 100vw;
+    background-image: url(../imagens/5243451.jpg); 
+    background-size: cover;
+    background-position: top;
+    animation: slidein 50s linear infinite; 
+    /* libear - quer dizer que vai ficar a mesma velocidade durante toda a animação. */
+    animation-direction: alternate;  
+    
+
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    animation: fundoPiscando 2s linear infinite;
+    animation-direction: alternate; 
+    
+}
+
+div#box {
+    position: absolute;
+    margin-top: -70px;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 380px;
+    background-color: rgba(68, 154, 215, 0.533);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.175);
+    transform: translate(-50%, -50%);
+}
+
+div#textos {
+    margin-top: 90px;
+}
+
+
+
+p {
+    font-family: 'Geologica', sans-serif;
+    text-align: center;
+    font-size: 1.3em;
+    color: #132971;
+
+}
+
+
+    
+button {
+    display: block;
+    margin: auto;
+    margin-top: 150px;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #0b1649;
+    background-color: #3091b5;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+
+
+  }
+  
+  button:hover {
+    background-color: #39b0db;
+    box-shadow: 0px 15px 20px rgba(22, 92, 110, 0.558);
+    color: #cef4ff;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-10px);
+  }
+  
+
+
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    display: inline;
+    width: 100px;
+    height: 100px;
+    opacity: 80%; 
+    
+    animation: lupaMexendo 20s linear infinite;
+    animation-direction: alternate;   
+    
+    
+} 
