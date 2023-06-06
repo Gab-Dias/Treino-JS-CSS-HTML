@@ -54,15 +54,17 @@
     box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
 body {
+    width: 100vw;
+    height: 100vh;
     background-image: url(imagens/5243451.jpg);
     background-size: cover;
     background-position: top;
-    animation: slidein 50s linear infinite;
+    animation: slidein 40s linear infinite;
     /* libear - quer dizer que vai ficar a mesma velocidade durante toda a animação. */
     animation-direction: alternate;  
     
@@ -72,6 +74,7 @@ body {
 section {
     width: 100vw;
     height: 100vh;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
