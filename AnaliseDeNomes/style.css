@@ -82,6 +82,7 @@ section {
 
 div#box {
     position: absolute;
+    margin-top: -50px;
     top: 50%;
     left: 50%;
     width: 350px;
@@ -184,8 +185,8 @@ img {
     width: 100px;
     height: 100px;
     
-    animation: lupaMexendo 10s linear infinite;
-    /animation-direction: alternate;  
+    animation: lupaMexendo 20s linear infinite;
+    animation-direction: alternate;  
     
     
 } 
