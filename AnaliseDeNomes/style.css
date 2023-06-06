@@ -72,22 +72,22 @@ body {
 }
 
 section {
-    width: 100vw;
+    position: relative;
     height: 100vh;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     
 }
 
 div#box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 350px;
     height: 380px;
     background-color: rgba(68, 154, 215, 0.533);
     border-radius: 10px;
     overflow: hidden;
-    margin-left: -80px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.175);
+    transform: translate(-50%, -50%);
 }
 
 div#textos {
@@ -156,7 +156,7 @@ button {
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
     cursor: pointer;
-    outline: none;
+
   }
   
   button:hover {
@@ -173,11 +173,16 @@ button {
 
 
 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     z-index: -1;
     display: inline;
     width: 100px;
     height: 100px;
-    animation: lupaMexendo 20s linear infinite;
-    animation-direction: alternate;
+    
+    /* animation: lupaMexendo 20s linear infinite;
+    animation-direction: alternate; */
+    
     
 } 
