@@ -79,6 +79,16 @@ body {
 
 }
 
+body.daniel { 
+    width: 100vw;
+    background-image: url(../imagens/dados.jpg);
+    background-size: cover;
+    background-position: top;
+    animation: slidein 50s linear infinite;
+    animation-direction: alternate;  
+
+}
+
 section {
     position: relative;
     height: 100vh;
@@ -163,7 +173,7 @@ button {
     border: none;
     border-radius: 45px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
+    transition: all 0.2s ease 0s;
     cursor: pointer;
 
   }
