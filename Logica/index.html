@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // var um = prompt('Digite um número')
+        // var dois = prompt('Digite outro número')
+
+        // um = parseFloat(um) // converte string para número
+        // dois = parseFloat(dois)
+
+      
+        // alert(um + dois)
+
+        /* var n1 = prompt("Digite um número");
+        var n2 = prompt("digite outro número");
+
+        n1 = parseFloat(n1);
+        n2 = parseFloat(n2);
+
+        var resultado = n1 - n2
+
+        alert(`O resultado ta susbtração é ${resultado}`) */
+
+        //  var n1 = prompt("Digite um número");
+        // var n2 = prompt("digite outro número");
+
+        // n1 = parseFloat(n1);
+        // n2 = parseFloat(n2);
+
+        // var resultado = n1 / n2
+
+        // alert(`O resultado da divisão por ${n2} é ${resultado}`) 
+
+        var n1 = prompt("Digite um número");
+        var n2 = prompt("digite outro número");
+
+        n1 = parseFloat(n1);
+        n2 = parseFloat(n2);
+
+       if (n1 != n2) {
+        var sorteio = parseInt(Math.random() * 2)
+
+        if (sorteio == 0) {
+
+            if ( n1 < n2 ) {
+                alert('Jogador 1 ganhou')
+            } else {alert('Jogador 2 Ganhou')}
+        }
+
+        else if ( sorteio == 1) {
+            if (n1 > n2) {
+                alert('Jogador 1 ganhou')
+            } else { alert('jogador 2 ganhou')}
+        }
+        
+       } 
+       
+       else {
+        alert('Empate')
+       }
+
+
+
+    </script>
+    
+</body>
+</html>
