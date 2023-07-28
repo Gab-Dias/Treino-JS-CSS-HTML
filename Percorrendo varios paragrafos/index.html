@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percorrendo Paragrafos</title>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae omnis accusamus deleniti, excepturi dolorem corporis distinctio aliquid error. Eveniet fuga suscipit sint ut laboriosam quia esse, beatae similique quasi quam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae omnis accusamus deleniti, excepturi dolorem corporis distinctio aliquid error. Eveniet fuga suscipit sint ut laboriosam quia esse, beatae similique quasi quam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae omnis accusamus deleniti, excepturi dolorem corporis distinctio aliquid error. Eveniet fuga suscipit sint ut laboriosam quia esse, beatae similique quasi quam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae omnis accusamus deleniti, excepturi dolorem corporis distinctio aliquid error. Eveniet fuga suscipit sint ut laboriosam quia esse, beatae similique quasi quam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae omnis accusamus deleniti, excepturi dolorem corporis distinctio aliquid error. Eveniet fuga suscipit sint ut laboriosam quia esse, beatae similique quasi quam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae omnis accusamus deleniti, excepturi dolorem corporis distinctio aliquid error. Eveniet fuga suscipit sint ut laboriosam quia esse, beatae similique quasi quam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae omnis accusamus deleniti, excepturi dolorem corporis distinctio aliquid error. Eveniet fuga suscipit sint ut laboriosam quia esse, beatae similique quasi quam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae omnis accusamus deleniti, excepturi dolorem corporis distinctio aliquid error. Eveniet fuga suscipit sint ut laboriosam quia esse, beatae similique quasi quam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae omnis accusamus deleniti, excepturi dolorem corporis distinctio aliquid error. Eveniet fuga suscipit sint ut laboriosam quia esse, beatae similique quasi quam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae omnis accusamus deleniti, excepturi dolorem corporis distinctio aliquid error. Eveniet fuga suscipit sint ut laboriosam quia esse, beatae similique quasi quam.</p>
+
+    <script>
+
+        // função alto invocada
+        (function(){
+
+            'use strict'
+
+            //esse loop fez percorrer todos paragrafos
+            var paragrafos = document.querySelectorAll('p');
+
+            var x = 0;
+            while(paragrafos[x]) { //Enquanto existe paragrafos no indeice x qeu seria, paragrafos 1, 2, 3, 4
+                paragrafos[x].textContent = 'Essa página foi hackeada por Gabriel Dias'; // vai alterar o texto do paragrafo para esse
+                x++;
+            }
+
+        }) ()
+
+        (function(){
+
+        })()
+
+
+    </script>
+
+    
+</body>
+</html>
