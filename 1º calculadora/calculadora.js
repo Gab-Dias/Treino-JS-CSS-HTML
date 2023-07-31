@@ -1,0 +1,9 @@
+
+function AdicionarAoDisplay() {
+
+}
+
+
+function Operadores(){
+
+}
