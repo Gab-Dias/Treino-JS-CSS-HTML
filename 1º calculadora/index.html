@@ -13,24 +13,26 @@
     <section class="calculadora">
         <input type="text" name="display" id="display" disabled >
         <div class="numeros-operadores">
-            <button class="zero">0</button>
-            <button>1</button>   
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="operadores">/</button>
-            <button class="operadores">x</button>
-            <button class="operadores">+</button>
-            <button class="operadores">-</button>
-            <button class="operadores">=</button>
-            <button class="operadores">C</button>
+            <button class="zero" onclick="AdicionarAoDisplay()">0</button>
+            <button onclick="AdicionarAoDisplay()">1</button>   
+            <button onclick="AdicionarAoDisplay()">2</button>
+            <button onclick="AdicionarAoDisplay()">3</button>
+            <button onclick="AdicionarAoDisplay()">4</button>
+            <button onclick="AdicionarAoDisplay()">5</button>
+            <button onclick="AdicionarAoDisplay()">6</button>
+            <button onclick="AdicionarAoDisplay()">7</button>
+            <button onclick="AdicionarAoDisplay()">8</button>
+            <button onclick="AdicionarAoDisplay()">9</button>
+            <button class="operadores" onclick="Operadores()">/</button>
+            <button class="operadores" onclick="Operadores()">x</button>
+            <button class="operadores" onclick="Operadores()">+</button>
+            <button class="operadores" onclick="Operadores()">-</button>
+            <button class="operadores" onclick="Operadores()">=</button>
+            <button class="operadores" onclick="Operadores()">C</button>
         </div>
     </section>
+
+    <script src="calculadora.js"></script>
 
 
     
