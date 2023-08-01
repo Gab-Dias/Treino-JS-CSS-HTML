@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Disparando eventos direto pelo JavaScrip</h1>
+
+    <button id="btn1">Click</button>
+
+
+    <script>
+
+
+            var btn1 = document.querySelector('#btn1')
+
+            btn1.addEventListener('click', function(){ 
+                alert('você clicou com javascrip')
+            }) 
+
+            // Adicionei um evento de click no btn1 e passei em uma função anonima que ao clicar no botão, vai dá um alerta
+
+
+    </script>
+    
+</body>
+</html>
