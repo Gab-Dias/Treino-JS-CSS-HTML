@@ -10,6 +10,15 @@
 
     <button id="btn1">Click</button>
 
+    <h2>Disparando eventos</h2>
+
+    <div id="d1" style="background-color: red;">
+
+        texto dentro na div <span style="background-color: yellow;">Aqui é o span</span>
+
+
+    </div>
+
 
     <script>
 
@@ -21,6 +30,18 @@
             }) 
 
             // Adicionei um evento de click no btn1 e passei em uma função anonima que ao clicar no botão, vai dá um alerta
+
+            var d1 = document.querySelector('#d1')
+            var d1Span = document.querySelector('#d1 span')
+
+            d1.addEventListener('click', function(){
+                console.log('Você clicou na d1')
+            })
+
+            d1Span.addEventListener('click', function(){
+                console.log('Você clicou na d1 span')
+            })
+
 
 
     </script>
