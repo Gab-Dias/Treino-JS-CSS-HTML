@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="controls">
+     <div class="controls">
         <div class="x-axis"> Eixo X
             <label> <input type="radio" name="x" value="15"> 15&deg</label>
             <label> <input type="radio" name="x" value="45"> 45&deg</label>
@@ -38,7 +38,7 @@
             <label> <input type="radio" name="z" value="180"> 180&deg</label>
             <label> <input type="radio" name="z" value="270"> 270&deg</label>
         </div>
-    </div>
+    </div> 
     <div class="cena">
         <div class="cubo">
             <div class="face face-1">1</div>
@@ -49,6 +49,14 @@
             <div class="face face-6">6</div>
         </div>
     </div>
+
+    <!-- <script>
+        let cubo = document.querySelector('.cubo')
+        window.onmousemove = function(e) {
+            let x = e.clientX/3;
+            cubo.style.transform = "perspective(1000px) rotateY(" + x + " deg)"
+        }
+    </script> -->
 </body>
 
 </html>
