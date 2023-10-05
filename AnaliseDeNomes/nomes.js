@@ -1,4 +1,4 @@
-function analisar(){
+function analisarNome(){
 
     let nome = document.getElementById('inome')
 
