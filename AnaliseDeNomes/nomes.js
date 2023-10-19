@@ -17,7 +17,7 @@ function analisarNome(){
 
         case 'gabriel':
         case 'Gabriel':
-            alert('tem pau grande')
+            alert('legal')
             break
 
         case 'Yasmin':
